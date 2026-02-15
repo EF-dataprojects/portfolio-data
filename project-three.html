@@ -1,0 +1,137 @@
+Projet three: 
+
+
+
+
+Corrigée : 
+
+
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+  <meta charset="UTF-8" />
+  <title>Projet Three - Dashboard Excel</title>
+  <link rel="stylesheet" href="style.css" />
+</head>
+
+<body>
+
+  <!-- HEADER SIMPLE -->
+  <header class="header">
+    <h1>EL.F</h1>
+    <a href="index.html" class="project-btn">← Retour</a>
+  </header>
+
+  <!-- PAGE PROJET -->
+  <section class="project-page reveal">
+
+    <!-- TITRE PRINCIPAL -->
+    <h1 class="project-title">Dashboard Excel – Analyse des ventes</h1>
+
+    <p class="project-description">
+      Dashboard Excel interactif pour l’analyse des ventes : nettoyage complet des données, 
+      KPI dynamiques et visualisations automatisées par produit, catégorie et pays.
+    </p>
+
+    <!-- NETTOYAGE ET PRÉPARATION -->
+    <h2 class="project-subtitle">Nettoyage et préparation des données — avant / après</h2>
+
+    <div class="image-grid">
+      <img src="images/portfolio/imageexcel/avant-netoyage.png" alt="Avant nettoyage">
+      <img src="images/portfolio/imageexcel/après-nettoyage.png" alt="Après nettoyage">
+    </div>
+
+    <p class="project-description">
+      Le tableau à gauche présente les données initiales avec plusieurs anomalies courantes :<br><br>
+      – Incohérences dans les formats de dates (jj/mm/aaaa et jj-mm-aaaa)<br>
+      – Majuscules/minuscules irrégulières dans les noms de produits et catégories<br>
+      – Valeurs manquantes ou incorrectes dans les totaux ou quantités<br>
+      – Incohérences dans les noms de pays (ex. “FR”, “Frnace”, “Belg”)<br><br>
+      
+      Le tableau à droite montre le résultat après nettoyage et préparation :<br><br>
+      – Standardisation des formats de dates et des noms de produits, catégories et pays<br>
+      – Correction des valeurs manquantes ou incorrectes (totaux recalculés)<br>
+      – Uniformisation des majuscules et de l’orthographe<br><br>
+
+      Cette étape garantit que les données sont fiables pour les analyses suivantes
+      et que tous les KPI et graphiques sont corrects.  
+      Elle illustre la maîtrise des techniques de data cleaning et de préparation
+      des données, compétences essentielles pour un rôle d’analyste de données.
+    </p>
+
+    <!-- ANALYSE ET DASHBOARD AVANCÉE -->
+    <h2 class="project-subtitle">Analyse et Dashboard Avancée</h2>
+
+    <img src="images/portfolio/imageexcel/annalyse-avancée.png" alt="Analyse avancée" class="project-image">
+
+    <p class="project-description">
+      – Toutes les données originales sont présentes et nettoyées.<br>
+      – KPI avancés calculés (CA total, quantité totale, CA moyen, médiane, min/max, écart-type).<br>
+      – Top produits identifiés.
+    </p>
+
+    <p class="project-description">
+      Les indicateurs clés et analyses présentés (CA total, quantité totale, CA moyen, médiane, min/max, écart-type)
+      sont dynamiques et peuvent se mettre à jour automatiquement via TCD et formules SUMIFS/COUNTIFS.  
+      Les données ont été nettoyées (doublons supprimés, incohérences corrigées, formats standardisés) 
+      et peuvent être segmentées par pays, catégorie ou semaine pour une analyse interactive et fiable.  
+      Cette structure permet d’ajouter facilement de nouvelles lignes de ventes tout en conservant un suivi précis et à jour des KPI.
+    </p>
+
+    <div class="image-grid">
+      <img src="images/portfolio/imageexcel/dashboard-avancée.png" alt="Dashboard avancé 1">
+      <img src="images/portfolio/imageexcel/dashboard-avancée2.png" alt="Dashboard avancé 2">
+    </div>
+
+    <div class="analysis-text">
+      <p><strong>Ventes par catégorie et par pays :</strong></p>
+      <p>
+        La catégorie Accessoires totalise 15 ventes, avec la majorité en France (7),
+        tandis qu’Informatique totalise 14 ventes, également concentrées en France (10).
+        La France représente la part la plus importante des ventes totales (17 sur 29).
+      </p>
+
+      <p><strong>CA par produit :</strong></p>
+      <p>
+        Le produit le plus fréquemment vendu est la Souris Pro (4 ventes),
+        tandis que les laptops et les accessoires comme Clavier MX et SSD 1TB
+        apparaissent régulièrement dans les ventes.
+      </p>
+
+      <p><strong>Top 3 produits par quantité :</strong></p>
+      <p>
+        Le produit le plus vendu est la Souris Pro avec 7 unités,
+        suivi du Chargeur 65W (5 ventes) et de l’Écran 24 (4 ventes),
+        ce qui reflète une forte demande sur les accessoires populaires.
+      </p>
+
+      <p><strong>Évolution des ventes :</strong></p>
+      <p>
+        L’analyse temporelle met en évidence une progression régulière des ventes,
+        suggérant une demande stable et une bonne performance commerciale en début de mois.
+      </p>
+
+      <p><strong>Nombre de ventes par semaine :</strong></p>
+      <p>
+        Les ventes augmentent régulièrement de la semaine 1 à la semaine 4.
+        La baisse en semaine 5 s’explique par une période réduite à seulement trois jours.
+      </p>
+    </div>
+
+    <!-- ANALYSE DYNAMIQUE PAR PAYS -->
+    <h2 class="project-subtitle">Analyse dynamique des ventes par pays et catégorie</h2>
+
+    <p class="project-description">
+      La France génère la majorité du chiffre d’affaires, surtout sur les produits Informatique.
+    </p>
+
+    <div class="image-grid">
+      <img src="images/portfolio/imageexcel/capture1.png" alt="Analyse pays 1">
+      <img src="images/portfolio/imageexcel/capture2.png" alt="Analyse pays 2">
+    </div>
+
+  </section>
+
+  <script src="script.js"></script>
+</body>
+</html>

@@ -1,82 +1,130 @@
 <!DOCTYPE html>
 <html lang="fr">
 <head>
-  <meta charset="UTF-8">
-  <title>Portfolio Data Analyst</title>
-  <link rel="stylesheet" href="style.css">
+  <meta charset="UTF-8" />
+  <title>Portfolio</title>
+  <link rel="stylesheet" href="style.css" />
 </head>
+
 <body>
 
-<header>
-  <nav>
-    <a href="#home">Home</a>
-    <a href="#services">Services</a>
-    <a href="#portfolio">Portfolio</a>
-    <a href="#contact">Contact</a>
-  </nav>
-</header>
+  <!-- HEADER -->
+  <header class="header">
+    <h1>EL.F</h1>
+    <button id="themeToggle">🌙</button>
+  </header>
 
-<section id="home">
-  <h1>Data Analyst Freelance</h1>
-  <p>Transformez vos données en décisions claires.</p>
-</section>
+  <!-- HERO -->
+  <section class="hero reveal">
+    <h2>Data analyst</h2>
+    <p>J’aide les entreprises à exploiter leurs données pour optimiser leurs performances et prendre de meilleures décisions.</p>
+  </section>
 
-<section id="services">
-  <h2>Services</h2>
+  <!-- SERVICES -->
+  <section class="services reveal">
+    <h2 class="section-title">Mes services</h2>
 
-  <!-- Analyse de données -->
-  <div class="accordion">
-    <div class="accordion-header">Analyse de données <span>+</span></div>
-    <div class="accordion-content">
-      <div class="service-flex">
-        <img src="images/Analyse.png" alt="Analyse de données" class="service-image">
-        <div class="service-text">
-          <p>Analyse, nettoyage et interprétation de données pour transformer des chiffres bruts en décisions exploitables.</p>
-          <p><strong>Transformez vos données en décisions claires</strong><br>
-          À l’ère du digital, les données sont partout, mais sans analyse, elles restent inexploitées. Je vous accompagne dans l’analyse, la structuration et l’interprétation de vos données.</p>
-          <p><strong>Des analyses structurées pour des résultats mesurables</strong><br>
-          Nettoyage, analyses statistiques et visualisations claires pour produire des résultats exploitables.</p>
-        </div>
+    <div class="services-grid">
+
+      <div class="service-card">
+        <span>01</span>
+        <h3>Analyse de données</h3>
+        <p>
+          À l’ère du digital, les données sont partout, mais sans analyse,
+          elles restent inexploitées. J’accompagne mes clients dans
+          l’analyse, la structuration et l’interprétation de leurs données
+          afin de les transformer en informations claires et actionnables.
+        </p>
       </div>
-    </div>
-  </div>
 
-  <!-- Dashboards & Reporting -->
-  <div class="accordion">
-    <div class="accordion-header">Dashboards & Reporting <span>+</span></div>
-    <div class="accordion-content">
-      <div class="service-flex">
-        <img src="images/Dashboards.png" alt="Dashboards & Reporting" class="service-image">
-        <div class="service-text">
-          <p>Création de dashboards clairs et interactifs pour suivre les KPI et performances.</p>
-          <p><strong>Dashboards Dynamiques</strong><br>
-          Transformez vos données en tableaux de bord vivants et interactifs.</p>
-          <p><strong>Mises à jour faciles et insights exploitables</strong><br>
-          Suivi facile et visualisations compréhensibles pour la prise de décision.</p>
-        </div>
+      <div class="service-card">
+        <span>02</span>
+        <h3>Dashboards & Reporting</h3>
+        <p>
+          Création de tableaux de bord clairs et interactifs avec Excel
+          et Power BI pour suivre les KPI et faciliter la prise de décision.
+        </p>
       </div>
-    </div>
-  </div>
 
-  <!-- Automatisation & SQL/Python -->
-  <div class="accordion">
-    <div class="accordion-header">Automatisation & SQL/Python <span>+</span></div>
-    <div class="accordion-content">
-      <div class="service-flex">
-        <img src="images/SQL.png" alt="Automatisation & SQL/Python" class="service-image">
-        <div class="service-text">
-          <p>Automatisation des calculs et organisation des données pour gagner du temps.</p>
-          <p><strong>Collecte et structuration avec SQL</strong><br>
-          Organisation et nettoyage des données pour analyses futures.</p>
-          <p><strong>Automatisation et calculs avec Python</strong><br>
-          Calculs répétitifs ou complexes automatisés, résultats précis et exploitables.</p>
-        </div>
+      <div class="service-card">
+        <span>03</span>
+        <h3>Automatisation & Structuration des données (SQL & Python)</h3>
+        <p>
+          Centralisation, automatisation et structuration des données
+          pour générer des rapports fiables et exploitables.
+        </p>
       </div>
+
     </div>
-  </div>
+  </section>
 
-</section>
+  <!-- PROJETS -->
+  <h2 class="section-title reveal">Mes projets</h2>
 
-<script src="script.js"></script>
+  <section class="projects">
+
+    <div class="card reveal">
+      <h3>Analyse Python – Immobilier & Naissances</h3>
+      <p>Étude des données immobilières et démographiques par commune en France afin d’identifier les tendances de prix et les dynamiques d’attractivité territoriale.</p>
+      <a
+        href="https://github.com/EF-dataprojects/analyse-immobilier-naissances"
+        target="_blank"
+        class="project-btn"
+      >
+        Voir le projet →
+      </a>
+    </div>
+
+    <div class="card reveal">
+      <h3> SQL avancé – Gestion de bibliothèque & Modélisation des établissements de la petite enfance
+
+ </h3>
+      <p>Conception et développement de bases de données relationnelles incluant la création de vues, procédures, fonctions et triggers, ainsi que la modélisation complète d’établissements pour optimiser la gestion et l’analyse des données.</p>
+      <a
+        href="https://github.com/EF-dataprojects/portfolio-sql"
+        target="_blank"
+        class="project-btn"
+      >
+        Voir le projet →
+      </a>
+      <a href="project-four.html" class="project-btn">
+        Voir le projet →
+      </a>
+    </div>
+
+    <div class="card reveal">
+      <h3> Dashboard Excel – Analyse des ventes </h3>
+      <p>Dashboard Excel interactif pour l’analyse des ventes : nettoyage complet des données, KPI dynamiques et visualisations automatisées par produit, catégorie et pays.</p>
+      <a href="project-three.html" class="project-btn">
+    Voir le projet →
+  </a>
+    </div>
+
+    <div class="card reveal">
+  <h3>Dashboard Power BI – Suivi des performances</h3>
+  <p>Visualisation interactive<br>Filtres<br>KPI</p>
+  <a href="project-powerbi.html" class="project-btn">Voir le projet</a>
+</div>
+
+  </section>
+
+  <!-- CONTACT (À LA FIN DU BODY, COMME TU VOULAIS) -->
+  <section class="contact reveal">
+    <h2 class="section-title">Me contacter</h2>
+
+    <p class="contact-text">
+      À la recherche d’un Data Analyst rigoureux et orienté résultats ? 
+      <br />
+      Je mets mes compétences en Python, SQL et analyse de données au service de vos projets.
+    </p>
+
+  <a href="mailto:fatima.elam25@gmail.com" class="contact-button">
+      Discutons de votre projet →
+    </a>
+  </section>
+
+  <!-- SCRIPT -->
+  <script src="script.js"></script>
+
 </body>
 </html>
